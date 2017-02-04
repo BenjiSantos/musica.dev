@@ -49,6 +49,8 @@ form {
 @media (max-width: 435px) {
 	.icono {
 	margin-top: 100px !important;
+	text-align: center;
+    width: 100%;
 		}
 	body {
 	background-size: 100%;
@@ -63,5 +65,10 @@ form {
 	}
 	form {
 		    margin: 10px !important;
+	}
+	.icono {
+		text-align: center;
+    width: 100%;
+    margin:0px;
 	}
 }
