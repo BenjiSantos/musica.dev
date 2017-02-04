@@ -125,6 +125,7 @@ select{
   top:400px;
   left:670px;
 }
+
 .cinco1{
     position: absolute;
   z-index:1000;
@@ -147,8 +148,8 @@ select{
   left:250px;
 }
 .avatar{
-  height:50px;
-  width:50px;
+  height:40px;
+  width:40px;
 }
 .repro{
   color:white;
@@ -161,19 +162,19 @@ select{
   padding-left:25%;
 }
 .music{
-  height:60px;
-  width:60px;
+  height:30px;
+  width:30px;
 }
 .text-center{
   text-align: center;
 }
 .music1{
-  width:70px;
-  width:70px;
+  width:40px;
+  width:40px;
 }
 .music2{
-  width:60px;
-  width:60px;
+  width:30px;
+  width:30px;
 }
 .centrar{
   margin:auto;
@@ -191,15 +192,13 @@ select{
     top:200px;
     margin:0;
 }
-.repro img{
-  margin-left:10px;
-} 
+
 .avatar{
   height:40px;
   width:40px;
   z-index:3000;
 }
 .salsa{
-  width:200px;
-  height:200px;
+  width:60px;
+  height:60px;
 }
