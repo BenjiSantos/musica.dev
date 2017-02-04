@@ -199,6 +199,10 @@ select{
   z-index:3000;
 }
 .salsa{
-  width:60px;
-  height:60px;
+display:inline-block;
+  width:80px;
+  height:80px;
+}
+.img{
+  vertical-align:0 !important;
 }
