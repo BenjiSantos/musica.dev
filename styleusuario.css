@@ -172,9 +172,6 @@ span {
 #submitartista {
 	border-radius: 40px;
 }
-.alink{
-    background-color: white;
-}
 .agileits-newsletter input[type="submit"]:hover {
     border-color: #f30d60;
     background: #f30d60;
