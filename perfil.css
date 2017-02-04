@@ -18,14 +18,14 @@ select{
 .dos{
 	position: absolute;
 	top:50px;
-	left:700px;
+	left:20px;
 	z-index:500px;
 }
 .tres{
 	position: absolute;
 	z-index:1000;
 	top:50px;
-	left:900px;
+	left:30px;
 }
 .avatar2{
 	margin-top:10px;
@@ -37,111 +37,111 @@ select{
 	position: absolute;
 	z-index:1000;
 	top:60px;
-	left:1000px;
+	left:10px;
 }
 .cinco{
 		position: absolute;
 	z-index:1000;
 	top:70px;
-	left:1200px;
+	left:20px;
 }
 .seis{
 	position: absolute;
 	z-index:1000;
 	top:80px;
-	left:700px;
+	left:10px;
 }
 .siete{
 	position: absolute;
 	z-index:1000;
 	top:90px;
-	left:650px;
+	left:20px;
 }
 .ocho{
 	position: absolute;
 	z-index:1000;
 	top:100px;
-	left:600px;
+	left:10px;
 }
 .nueve{
 	position: absolute;
 	z-index:1000;
 	top:200px;
-	left:600px;
+	left:20px;
 }
 .diez{
 	position: absolute;
 	z-index:1000;
 	top:400px;
-	left:750px;
+	left:10px;
 
 }
 .once{
 	position: absolute;
 	z-index:1000;
 	top:500px;
-	left:600px;
+	left:20px;
 }
 .doce{
 	position: absolute;
 	z-index:1000;
 	top:500px;
-	left:590px;
+	left:10px;
 }
 .trece{
 	position: absolute;
 	z-index:1000;
 	top:500px;
-	left:640px;
+	left:20px;
 }
 .catorce{
 	position: absolute;
 	z-index:1000;
 	top:450px;
-	left:790px;
+	left:20px;
 }
 .quince{
 	position: absolute;
 	z-index:1000;
 	top:300px;
-	left:850px;
+	left:35px;
 }
 
 .uno1{
 	position: absolute;
 	top:200px;
-	right:700px;
+	left:20px;
 	z-index:300px;
 }
 .dos1{
 	position: absolute;
 	top:50px;
-	left:800px;
+	left:10px;
 	z-index:800px;
 }
 .tres1{
 	position: absolute;
 	z-index:1000;
-	top:350px;
+	top:30px;
 	left:660px;
 }
 .cuatro1{
 	position: absolute;
 	z-index:1000;
-	top:400px;
+	top:20px;
 	left:670px;
 }
 .cinco1{
 		position: absolute;
 	z-index:1000;
-	top:350px;
+	top:32px;
 	left:650px;
 }
 .seis1{
 	position: absolute;
 	z-index:1000;
 	top:200px;
-	left:750px;
+	left:30px;
 }
 .icon{
 	height:0;
