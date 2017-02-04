@@ -29,8 +29,9 @@ img{max-width:100%;}
 .play img{
     width:60px;
     height:60px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 100px;
+    margin-bottom: 30px;
 }
 /*-- end reset --*/
 body {
