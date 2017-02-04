@@ -54,3 +54,11 @@ form {
 	background-size: 100%;
 	}
 }
+@media (max-width: 335px) {
+	.icono {
+	margin-top: 100px !important;
+		}
+	body {
+	background-size: 100%;
+	}
+}
