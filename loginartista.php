@@ -20,7 +20,7 @@
 						<span>Usuario</span>
 						<input type="text" name="user"><hr><br>
 						<span>Contraseña</span>
-						<input type="text" name="password"><hr>
+						<input type="password" name="password"><hr>
 						<input type="submit" name="submit" id="submitartista" value="Ingresar">
 					</form>
 				</div>
