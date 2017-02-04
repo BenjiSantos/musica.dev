@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<link href="comprar.css" rel="stylesheet" type="text/css" media="all">
+<link href="subir.css" rel="stylesheet" type="text/css" media="all">
 
 </head>
 <body data-gr-c-s-loaded="true">
@@ -12,17 +12,16 @@
 	<div class="w3agileits-main">
 		<a href="#"><img class="flecha" src="img/derecha.png" width="40px" height="40px"></a>
 		<div class="agileits-newsletter" style="margin-top: 10px">
-				<h1 class="font1">Subir audio</h1>
 				<div class="play">	
-					<img src="img/musica.png">
+					<img width="90px" height="90px" src="img/logo.png">
 					<h2 class="font2">Desconocido.mp3</h2>
 				</div><br>
-				<div>
-					<img src="img/musica.png" alt="">
+				<div style="text-align: center;">
+					<img  src="img/musica.png" alt="">
+					<label for="files">►</label>
 				</div>
 
-				<h4 class="text-span">¡Dale click y sube un tema en mp3, agrega un nombre, categoría y listo!</h4><br><br>
-								
+				<h4 class="text-span siguiente">¡Dale click y sube un tema en mp3, agrega un nombre, categoría y listo!</h4><br><br>		
 				<div class="col-md-12">
 				<button>Rock</button>
 				<button>Bachata</button>
@@ -30,6 +29,11 @@
 				<button>...</button>
 				<button>...</button>
 			</div>
+			<form method="post" action="" enctype="multipart/form-data">
+				<a style="margin-top: 20px;" href="index.html"><img style="margin-top: 20px;" src="img/guardar.png"></a>
+  				<input id="files" style="visibility:hidden;" type="file">
+				</form>
+						
 		</div>	
 	</div>	
 	
