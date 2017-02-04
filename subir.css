@@ -30,6 +30,11 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
     font-weight: bolder;
     text-align: center;
 }
+.btn{
+    background-color: white;
+    width: 250px;
+    border-radius: 40px;
+}
 .font2 {
     font-size: 0.8em;
 }
