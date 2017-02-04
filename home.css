@@ -213,6 +213,7 @@ select{
 }
 .centrar1{
 	text-align: center;
+	padding-left:25%;
 }
 .music{
 	height:60px;
@@ -230,7 +231,6 @@ select{
 	margin:auto;
 	text-align: center;
 	margin-top:10px;
-	width: 100%
 }
 
 .repro{
