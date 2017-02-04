@@ -1,0 +1,205 @@
+select{
+ width:100%;
+ height:50px;
+ padding:10px;
+}
+.icon img{
+  height:20px;
+  width:-40px;
+  position:relative;
+
+}
+.uno{
+  position: absolute;
+  top:100px;
+  right:600px;
+  z-index:300px;
+}
+.dos{
+  position: absolute;
+  top:50px;
+  left:700px;
+  z-index:500px;
+}
+.tres{
+  position: absolute;
+  z-index:1000;
+  top:50px;
+  left:900px;
+}
+.cuatro{
+  position: absolute;
+  z-index:1000;
+  top:60px;
+  left:1000px;
+}
+.cinco{
+    position: absolute;
+  z-index:1000;
+  top:70px;
+  left:1200px;
+}
+.seis{
+  position: absolute;
+  z-index:1000;
+  top:80px;
+  left:700px;
+}
+.siete{
+  position: absolute;
+  z-index:1000;
+  top:90px;
+  left:650px;
+}
+.ocho{
+  position: absolute;
+  z-index:1000;
+  top:100px;
+  left:600px;
+}
+.nueve{
+  position: absolute;
+  z-index:1000;
+  top:200px;
+  left:600px;
+}
+.diez{
+  position: absolute;
+  z-index:1000;
+  top:400px;
+  left:750px;
+
+}
+.once{
+  position: absolute;
+  z-index:1000;
+  top:500px;
+  left:600px;
+}
+.doce{
+  position: absolute;
+  z-index:1000;
+  top:500px;
+  left:590px;
+}
+.trece{
+  position: absolute;
+  z-index:1000;
+  top:500px;
+  left:640px;
+}
+.catorce{
+  position: absolute;
+  z-index:1000;
+  top:450px;
+  left:790px;
+}
+.quince{
+  position: absolute;
+  z-index:1000;
+  top:300px;
+  left:850px;
+}
+
+.uno1{
+  position: absolute;
+  top:200px;
+  right:700px;
+  z-index:300px;
+}
+.dos1{
+  position: absolute;
+  top:50px;
+  left:800px;
+  z-index:800px;
+}
+.tres1{
+  position: absolute;
+  z-index:1000;
+  top:350px;
+  left:660px;
+}
+.cuatro1{
+  position: absolute;
+  z-index:1000;
+  top:400px;
+  left:670px;
+}
+.cinco1{
+    position: absolute;
+  z-index:1000;
+  top:350px;
+  left:650px;
+}
+.seis1{
+  position: absolute;
+  z-index:1000;
+  top:200px;
+  left:750px;
+}
+.icon{
+  height:0;
+}
+.audio{
+  position: absolute;
+  z-index:1000;
+  top:250px;
+  left:250px;
+}
+.avatar{
+  height:50px;
+  width:50px;
+}
+.repro{
+  color:white;
+}
+.lugar{
+  color:#32c2a2;
+}
+.centrar1{
+  text-align: center;
+  padding-left:25%;
+}
+.music{
+  height:60px;
+  width:60px;
+}
+.text-center{
+  text-align: center;
+}
+.music1{
+  width:70px;
+  width:70px;
+}
+.music2{
+  width:60px;
+  width:60px;
+}
+.centrar{
+  margin:auto;
+  text-align: center;
+  margin-top:10px;
+}
+
+.repro{
+    position: absolute;
+    background-color:#7544c0;
+    z-index:1000;
+    width:100%;
+    
+    height:460px;
+    top:200px;
+    margin:0;
+}
+.repro img{
+  margin-left:10px;
+} 
+.avatar{
+  height:40px;
+  width:40px;
+  z-index:3000;
+}
+.salsa{
+  width:200px;
+  height:200px;
+}

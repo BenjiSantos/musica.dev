@@ -25,75 +25,19 @@ a{text-decoration:none;}
 .vertical-top{	vertical-align:top;}/* vertical align top */
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
-.font1 {
-    font-size: 1em;
-    font-weight: bolder;
-    text-align: center;
-}
-.font2 {
-    font-size: 0.8em;
-}
-.contenedor-blanco {
-     margin-top: 20px;
-     padding: 10px;
-
-}
-input[placeholder], [placeholder], *[placeholder] {
-    color: purple !important;
-    font-size: 0.5em;
-}
-.flecha {
-    padding-left: 30px;
-}
-.siguiente {
-    margin-top: 20px;
-}
-.cuadroblanco {
-    background-color: white;
-}
-.text-span{
-    color: white;
-    font-size: 0.8em;
-    text-align: center;
-}
-.text-span-3{
-    color: white;
-    font-size: 0.8em;
-    font-weight: bolder;
-    margin-top: 20px;
-    text-align: center;
-}
-.text-span2{
-    color: purple;
-}
-.text-span4{
-    color: white;
-}
-hr {
-    color: grey;
-}
-img{max-width:100%;}
-.play img{
-    width:60px;
-    height:60px;
-    margin-top: 10px;
-    margin-left: 120px;
-    margin-bottom: 30px;
+img{max-width:100%;
+margin-top:2%;}
+.center img{
+    padding-left:50px;
 }
 /*-- end reset --*/
 body {
     font-family: 'Open Sans', sans-serif;
-    background: url(img/morado.png)no-repeat center 0px;
+    background: url(images/guitarra.png)no-repeat center 0px;
     background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
     background-size: cover;
-}
-.termi{
-    font-size: 12px;
-    color: white;
-    margin-top:30px;
-    text-align: center;
 }
 h1 {
     font-size: 2.8em;
@@ -107,7 +51,7 @@ h2 {
     color: #fff;
     font-weight: 100; 
     font-family: 'Six Caps', sans-serif;
-    
+    letter-spacing: 12px;
 	line-height: 0.9em;
 }
 /*-- main --*/
@@ -117,14 +61,10 @@ h2 {
 .agileits-newsletter {
     width: 28%;
     margin: 2.5em auto;
-    background: url(img/.png)no-repeat center 0px;
+    background: url(images/banner.jpg)no-repeat center 0px;
     background-size: cover;
 }	
-.w3ls-tabs {
-    clear: both;
-    padding: 3em;
-   
-}
+
 .wthree-icons {
     display: block;
     text-align: center;
@@ -135,7 +75,7 @@ h2 {
 	margin-right: 5px;
 }
 .wthree-icons a {
-    background: url(images/.png)no-repeat 0px 0px;
+    background: url(images/sprite.png)no-repeat 0px 0px;
     display: block;
     width: 33px;
     height: 30px;
@@ -184,9 +124,6 @@ h2 {
     transition: .5s all;
     width: 8%;
 }
-span {
-	color:white;
-}
 .agileits-newsletter input[type="email"] {
     width: 91.3%;
     padding: 1em 1em;
@@ -216,9 +153,6 @@ span {
     cursor: pointer;
     margin-top: 3.5em;
 }
-#submitartista {
-	border-radius: 40px;
-}
 .agileits-newsletter input[type="submit"]:hover {
     border-color: #f30d60;
     background: #f30d60;
@@ -235,11 +169,6 @@ span {
 }
 :-ms-input-placeholder {  
 	color:#fff !important;
-}
-input{
-	border:none;
-	background-color: transparent;
-	color: grey;
 }
 /*-- copyright --*/
 .copyright {
@@ -300,9 +229,7 @@ h1 {
 .agileits-newsletter {
     width: 41%;
 }
-.w3ls-tabs { 
-    padding: 2.8em; 
-}
+
 }
 @media(max-width:900px){
 .agileits-newsletter {
@@ -331,9 +258,7 @@ h2 {
 h1 {
     font-size: 2.4em;
 }
-.w3ls-tabs {
-    padding: 2.2em;
-}
+
 h2 {
     letter-spacing: 7px;
     font-size: 2.8em;
@@ -386,9 +311,7 @@ h2 {
 }
 }
 @media(max-width:414px){
-.w3ls-tabs {
-    padding: 2em;
-}
+
 h2 {
     letter-spacing: 4px;
     font-size: 2.4em;
@@ -426,9 +349,12 @@ h2 {
 .wthree-icons ul li { 
     margin-right: 3px;
 }
-.w3ls-tabs {
-    padding: 1.6em;
+
+.centrar{
+    text-align: center;
+    margin:auto;
 }
+
 .agileits-newsletter p {
     margin: 2em 0 3em;
 }

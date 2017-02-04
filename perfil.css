@@ -21,14 +21,17 @@ select{
 	left:700px;
 	z-index:500px;
 }
-.flecha {
-    padding-left: 30px;
-}
 .tres{
 	position: absolute;
 	z-index:1000;
 	top:50px;
 	left:900px;
+}
+.avatar2{
+	margin-top:10px;
+}
+.centrar div{
+	display:inline-block;
 }
 .cuatro{
 	position: absolute;
@@ -140,61 +143,6 @@ select{
 	top:200px;
 	left:750px;
 }
-.siete1{
-	position: absolute;
-	z-index:1000;
-	top:400px;
-	left:600px;
-}
-.ocho1{
-	position: absolute;
-	z-index:1000;
-	top:500px;
-	left:600px;
-}
-.nueve1{
-	position: absolute;
-	z-index:1000;
-	top:500px;
-	left:700px;
-}
-.diez1{
-	position: absolute;
-	z-index:1000;
-	top:450px;
-	left:600px;
-
-}
-.once1{
-	position: absolute;
-	z-index:1000;
-	top:500px;
-	left:500px;
-}
-.doce1{
-	position: absolute;
-	z-index:1000;
-	top:400px;
-	left:560px;
-}
-.trece1{
-	position: absolute;
-	z-index:1000;
-	top:500px;
-	left:600px;
-}
-.catorce1{
-	position: absolute;
-	z-index:1000;
-	top:550px;
-	left:660px;
-}
-.quince1{
-	position: absolute;
-	z-index:1000;
-	top:590px;
-	left:560px;
-}
 .icon{
 	height:0;
 }
@@ -204,7 +152,40 @@ select{
 	top:250px;
 	left:250px;
 }
-
+.avatar{
+	height:50px;
+	width:50px;
+}
+.repro{
+	color:white;
+}
+.lugar{
+	color:#32c2a2;
+}
+.centrar1{
+	text-align: center;
+	padding-left:25%;
+}
+.music{
+	height:60px;
+	width:60px;
+}
+.text-center{
+	text-align: center;
+}
+.music1{
+	width:70px;
+	width:70px;
+}
+.music2{
+	width:60px;
+	width:60px;
+}
+.centrar{
+	margin:auto;
+	text-align: center;
+	margin-top:10px;
+}
 
 .repro{
 		position: absolute;
@@ -212,10 +193,15 @@ select{
 		z-index:1000;
 		width:100%;
 		
-		height:150px;
-		top:550px;
+		height:460px;
+		top:200px;
 		margin:0;
 }
 .repro img{
 	margin-left:10px;
+} 
+.avatar{
+	height:40px;
+	width:40px;
+	z-index:3000;
 }

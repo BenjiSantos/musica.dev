@@ -21,9 +21,6 @@ select{
 	left:700px;
 	z-index:500px;
 }
-.flecha {
-    padding-left: 30px;
-}
 .tres{
 	position: absolute;
 	z-index:1000;
@@ -204,7 +201,37 @@ select{
 	top:250px;
 	left:250px;
 }
-
+.avatar{
+	height:50px;
+	width:50px;
+}
+.repro{
+	color:white;
+}
+.lugar{
+	color:#32c2a2;
+}
+.centrar1{
+	text-align: center;
+	padding-left:25%;
+}
+.music{
+	height:60px;
+	width:60px;
+}
+.music1{
+	width:70px;
+	width:70px;
+}
+.music2{
+	width:60px;
+	width:60px;
+}
+.centrar{
+	margin:auto;
+	text-align: center;
+	margin-top:10px;
+}
 
 .repro{
 		position: absolute;
@@ -212,10 +239,10 @@ select{
 		z-index:1000;
 		width:100%;
 		
-		height:150px;
+		height:350px;
 		top:550px;
 		margin:0;
 }
 .repro img{
 	margin-left:10px;
-}
+} 
