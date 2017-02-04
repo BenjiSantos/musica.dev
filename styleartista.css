@@ -1,0 +1,56 @@
+body {
+	background-image: url("img/backgroundartista.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.divicono {
+	width: 100%;
+	height: 400px;
+}
+
+.icono {
+	text-align: center;
+	margin: 50px
+}
+input{
+
+	border: none;
+	background-color: transparent !important;
+	color: grey;
+}
+label {
+	color: white;
+	font-size: 1.5em;
+	margin:10px; 
+}
+.divform {
+	width: 100%;
+
+}
+.container {
+	text-align: center;
+}
+hr {
+	color: white;
+}
+#submit{
+	background-color: white !important;
+	border-radius: 20px;
+	color: black;
+	margin:20px;
+	font-size: 1.5em;
+	width: 250px;
+	height:40px;
+}
+form {
+	margin:40px;
+}
+
+@media (max-width: 470px) {
+	.icono {
+	margin-top: 100px !important;
+		}
+	body {
+	background-size: 100%;
+	}
+}
