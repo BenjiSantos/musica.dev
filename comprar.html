@@ -27,7 +27,10 @@
 				<input type="text" name="precio" style="margin-bottom: 2px;color:purple; font-size: 1em">
 				 </div>
 				</div>
-			<img class="siguiente" src="img/comprar.png">
+				<form method="post" action="comprar.php" enctype="multipart/form-data">
+  				<input id="files" style="visibility:hidden;" type="file" name="file">
+  				<input style="border-radius: 40px; color:purple;" type="submit" name="" value="Comprar">
+				</form>
 		</div>	
 	</div>	
 	
