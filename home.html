@@ -31,48 +31,79 @@ document.oncontextmenu = function(){return false;}
           </select>
 
   </div>
-    <div class="icon"> 
-
-        <img class="uno" src="images/equalize.png">
-        <img class="dos" src="images/equalizer.png" alt="">
-        <img class="tres" src="images/equalize.png">
-        <img class="cuatro" src="images/equalizer.png" alt="">
-        <img class="cinco" src="images/equalize.png">
-        <img class="seis" src="images/equalizer.png" alt="">
-        <img class="siete" src="images/equalize.png">
-        <img class="ocho" src="images/equalizer.png" alt="">
-        <img class="nueve" src="images/equalize.png">
-        <img class="diez" src="images/equalizer.png" alt="">
-        <img class="once" src="images/equalize.png">
-        <img class="doce" src="images/equalizer.png" alt="">
-        <img class="trece" src="images/equalize.png">
-        <img class="catorce" src="images/equalizer.png" alt="">
-        <img class="quince" src="images/equalize.png">
-        <img class="uno1" src="images/equalize.png">
-        <img class="dos1" src="images/equalizer.png" alt="">
-        <img class="tres1" src="images/equalize.png">
-        <img class="cuatro1" src="images/equalizer.png" alt="">
-        <img class="cinco1" src="images/equalize.png">
-        <img class="seis1" src="images/equalizer.png" alt="">
-        <img class="siete1" src="images/equalize.png">
-        <img class="ocho1" src="images/equalizer.png" alt="">
-        <img class="nueve1" src="images/equalize.png">
-        <img class="diez1" src="images/equalizer.png" alt="">
-        <img class="once1" src="images/equalize.png">
-        <img class="doce1" src="images/equalizer.png" alt="">
-        <img class="trece1" src="images/equalize.png">
-        <img class="catorce1" src="images/equalizer.png" alt="">
-        <img class="quince1" src="images/equalize.png">
-        <a href="mapa.html"><img class="audio" src="images/audio.png" alt="" src="images/audio.png"></a>
-      </div>
-
-    <div id="map">
-
-        
-        
-
+    <div id="floating-panel" style="display: none">
+      <input style="width: 270px" id="address" type="textbox" value="Malecón de la Reserva 610, Miraflores 15074">
+      <input id="submit" type="button" value="Guardar"><br>
+      Nombre:
+      <input type="text" name="name"><br>
+      Edad: <input type="text" name="edad"><br>
+      Correo: <input type="email" name="email">
     </div>
-    <div class="repro"> 
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: {lat: -12.131454, lng: -77.030135}
+        });
+        var geocoder = new google.maps.Geocoder();
+
+        document.getElementById('repro').addEventListener('click', function() {
+          geocodeAddress(geocoder, map);
+        });
+      }
+
+      function geocodeAddress(geocoder, resultsMap) {
+          var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Carla Robles</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Musico</b>, de genero <b>Rock</b>' +
+      '<p>Pueden saber un poco más de ella en : <a href="https://en.wikipedia.org/">'+
+      'Leftherian<a>'+
+      '<h4>Precio de concierto por hora : $80 usd</h4>'
+      '</div>'+
+      '</div>';
+      var addressArray = new Array("sArmendariz 350, Miraflores 15074, Peru",
+        "Malecón de la Reserva 615, Distrito de Lima 15074, Peru",
+        "Malecón de la Reserva 610, Miraflores 15074, Peru",
+        "Av Jose Larco, Miraflores 15074, Peru",
+        "Larcomar, Malecón de la Reserva 610, Miraflores Lima 18",
+        "Lima 15074",
+        "JW Marriott Hotel, Malecón de la Reserva 615, Miraflores 15074");
+      var markerBounds = new google.maps.LatLngBounds();
+        var address = document.getElementById('address').value;
+        for (var i = 0; i < addressArray.length; i++) {
+        geocoder.geocode({'address': addressArray[i]}, function(results, status) {
+          if (status === 'OK') {
+            resultsMap.setCenter(results[0].geometry.location);
+             var infowindow = new google.maps.InfoWindow({
+              content: contentString
+              });
+            var uluru = {lat: -12.131454, lng: -77.030125};
+            var marker = new google.maps.Marker({
+              map: resultsMap,
+              position: results[0].geometry.location,
+              animation: google.maps.Animation.BOUNCE,
+              title: 'Musico',
+              icon: 'images/equalizer.png',
+              content: contentString
+            });
+
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+          marker.addListener('click', function() {
+          infowindow.open(map, marker);
+  });
+        });
+      }}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaHpBtRNmPpY0b6G3ivtxzi3jyQbM3iVc&callback=initMap">
+    </script>
+    <div id="repro" class="repro"> 
     	<div class="col-md-12 centrar">	
 	       	<a href="demo.html"><img class="music" src="images/rock.png" alt=""></a>
 	       	<a href="demo.html"><img class="music1" src="images/music1.png" alt=""></a>
@@ -103,70 +134,5 @@ document.oncontextmenu = function(){return false;}
 				
        	</div>
     </div>
-    <script>
-
-// The following example creates complex markers to indicate beaches near
-// Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
-// to the base of the flagpole.
-
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
-    center: {lat: -12.11, lng: 283.016}
-  });
-
-  setMarkers(map);
-}
-
-// Data for the markers consisting of a name, a LatLng and a zIndex for the
-// order in which these markers should display on top of each other.
-var beaches = [
-  ['Lima', -12.4, 286.12, 4],
-  ['callao', -15.4, 290, 5],
-  ['Ate', -16.4, 310, 3],
-  ['San Isidro', -12.9, 320, 2],
-  ['Surco', -13.2, 298, 1]
-];
-
-function setMarkers(map) {
-  // Adds markers to the map.
-
-  // Marker sizes are expressed as a Size of X,Y where the origin of the image
-  // (0,0) is located in the top left of the image.
-
-  // Origins, anchor positions and coordinates of the marker increase in the X
-  // direction to the right and in the Y direction down.
-  var image = {
-    url: 'images/equalize.png',
-    // This marker is 20 pixels wide by 32 pixels high.
-    size: new google.maps.Size(20, 32),
-    // The origin for this image is (0, 0).
-    origin: new google.maps.Point(0, 0),
-    // The anchor for this image is the base of the flagpole at (0, 32).
-    anchor: new google.maps.Point(0, 32)
-  };
-  // Shapes define the clickable region of the icon. The type defines an HTML
-  // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-  // The final coordinate closes the poly by connecting to the first coordinate.
-  var shape = {
-    coords: [1, 1, 1, 20, 18, 20, 18, 1],
-    type: 'poly'
-  };
-  for (var i = 0; i < beaches.length; i++) {
-    var beach = beaches[i];
-    var marker = new google.maps.Marker({
-      position: {lat: beach[1], lng: beach[2]},
-      map: map,
-      icon: image,
-      shape: shape,
-      title: beach[0],
-      zIndex: beach[3]
-    });
-  }
-}
-
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABo2vpOBsySfHQHjYnik6TYzMG-VCr2ro&callback=initMap"></script>
   </body>
 </html> 
